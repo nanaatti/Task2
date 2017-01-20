@@ -1,0 +1,50 @@
+<h3>
+  Task A
+</h3>
+
+<p>
+  {{ vastaus.outDir }}
+</p>
+
+<p>
+  {{ vastaus.mapRoot }}
+</p>
+
+<p>
+    {{ vastaus.module }}
+</p>
+
+<p>
+  {{ vastaus.target }}
+</p>
+
+
+
+<h3>
+  Task B
+</h3>
+
+<!--
+<ul>
+  <li *ngFor="let tyopaikka of apinVastaus">
+    <a href="{{ tyopaikka.linkki }}">{{ tyopaikka.ammattiala }}</a>
+  </li>
+</ul>
+-->
+
+<!-- <ul>
+  <li *ngFor="let meeting of testiVastaus">
+    <a href="{{ meeting.video.list_endpoint }}">{{ meeting.agenda_item.schema }}</a>
+  
+  <p>
+      {{ meeting.agenda_item.schema }}
+    </p>
+  </li>
+</ul> 
+-->
+
+<ul>
+  <li *ngFor="let tyopaikka of testiVastaus">
+    <a href="{{ tyopaikka.sources.mol || tyopaikka.sources.oikotie }}">{{ tyopaikka.title }}</a>
+  </li>
+</ul>
